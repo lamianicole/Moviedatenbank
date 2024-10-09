@@ -29,10 +29,24 @@ console.log(output);
 // console.log(rating);
 
 // elvis operator --> ? prüft, ob etwas truthy oder falsy ist
-// searchBtn?.addEventListener('click', () => {
-//     const searchItemValue = inputMovie?.value;
-//     console.log(searchItemValue);
-// })
+searchBtn?.addEventListener('click', () => {
+    const searchItemValue = inputMovie?.value;
+    console.log(searchItemValue);
+})
+
+// const inputMovie = (movieSelected: any[]) => {
+//     output.innerHTML= " ";
+//     movieSelected.forEach((movie) => {
+//         output.innerHTML += `<div>
+//             <h3>${movie[0]}</h3>
+//             <p>${movie[1]}</p>
+//             <h4>${movie[2]}</h4>
+//             <p>${movie[3]}</p>
+//             <p>${movie[4]}</p>
+//             <p>${movie[5]}</p>
+//             </div>`;
+//     })
+// }
 
 // Karten bespielen
 // const renderMovies = (array: [string, string, string, string, string[], string][]) => {
@@ -50,13 +64,6 @@ console.log(output);
 
 // renderMovies(movies);
 
-
-// Button year up - Sortierung aufsteigend
-// yearUpBtn.addEventListener('click', () => {
-//         newArray.sort((a: string, b:string) => {a - b
-//         }
-//     })
-// // Button year down
 
 // einmal abfragen, ob unsere const (yearUp) vorhanden ist
 if (yearUpBtn) {
@@ -126,9 +133,3 @@ const newArrRating = movies.sort((a, b) => {
 console.log(newArrRating);
 });
 }
-
-
-
-
-
-
