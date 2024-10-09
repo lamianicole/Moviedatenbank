@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./movies.css">
     <title>Project Moviedatenbank</title>
 </head>
 <body>
@@ -11,28 +12,20 @@
             <h1>Movies for You</h1>
             <h2>The best MovieDB</h2>
         </article>
-        <form>
-            <div class="container-field-btn">
+        <form=>
+            <div class="con-one">
                 <input type="text" name="" id="inputMovie" placeholder=""/>
                 <input type="button" value="SEARCH" id="searchBtn"/>
             </div>
-            <div class="container-dreimal-btn">
+            <div class="con-two">
                 <input type="button" value="YEAR UP" id="yearUpBtn">
                 <input type="button" value="YEAR DOWN" id="yearDownBtn">
-                <input type="button" value="BEST RATE" id="BestRateBtn">
+                <input type="button" value="BEST RATE" id="bestRateBtn">
             </div>
-        </form>
+        </form=>
     </section>
-    <section>
-        <article class="infoMovie">
-            <h3 id="title"></h3>
-            <p id="releaseYear"></p>
-            <h4 id="director"></h4>
-            <p id="runningTime"></p>
-            <p id="genre"></p>
-            <p id="rating"></p>
-        </article>
-    </section>
+    <div class="output">
+    </div>
     <script type="module" src="./movies.ts"></script>
 </body>
 </html>
