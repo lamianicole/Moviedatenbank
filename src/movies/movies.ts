@@ -8,12 +8,7 @@ const searchBtn = document.querySelector('#searchBtn') as HTMLInputElement;
 const yearUpBtn = document.querySelector('#yearUpBtn') as HTMLInputElement;
 const yearDownBtn = document.querySelector('#yearDownBtn') as HTMLInputElement;
 const bestRateBtn = document.querySelector('#bestRateBtn') as HTMLInputElement;
-const output = document.querySelector('.output') as HTMLInputElement;
-// const title = document.querySelector('#title') as HTMLElement;
-// const releaseYear = document.querySelector('#releaseYear') as HTMLElement;
-// const director = document.querySelector('#director') as HTMLElement;
-// const runningTime = document.querySelector('#runningTime') as HTMLElement;
-// const rating = document.querySelector ('#rating') as HTMLElement;
+const output = document.querySelector('#output') as HTMLElement;
 
 console.log(inputMovie);
 console.log(searchBtn);
@@ -22,31 +17,17 @@ console.log(yearDownBtn);
 console.log(bestRateBtn);
 console.log(output);
 
-// console.log(title);
-// console.log(releaseYear);
-// console.log(director);
-// console.log(runningTime);
-// console.log(rating);
-
 // elvis operator --> ? prüft, ob etwas truthy oder falsy ist
 searchBtn?.addEventListener('click', () => {
     const searchItemValue = inputMovie?.value;
     console.log(searchItemValue);
 })
 
-// const inputMovie = (movieSelected: any[]) => {
-//     output.innerHTML= " ";
-//     movieSelected.forEach((movie) => {
-//         output.innerHTML += `<div>
-//             <h3>${movie[0]}</h3>
-//             <p>${movie[1]}</p>
-//             <h4>${movie[2]}</h4>
-//             <p>${movie[3]}</p>
-//             <p>${movie[4]}</p>
-//             <p>${movie[5]}</p>
-//             </div>`;
-//     })
-// }
+const outputMovies = document.querySelector ('#output') as HTMLElement;
+movies.forEach((movie) => {
+    log
+}
+
 
 // Karten bespielen
 // const renderMovies = (array: [string, string, string, string, string[], string][]) => {
@@ -106,7 +87,7 @@ movies.forEach((item) => {
 });
 const newArrDown = movies.sort((a, b) => {
     return b[1] - a[1];
-    });
+    })
 console.log(newArrDown);
 });
 }
